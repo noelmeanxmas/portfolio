@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.nav {
+    position: static;
+}
+
+.works_disp h2 {
+    text-align: center;
+    margin: 80px auto 50px;
+}
+
+.works_wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.works_cont {
+    width: 30%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.footer {
+    background-color: #212121;
+    padding: 10px 10px;
+    color: #fffdf8;
+    text-align: center;
+}
+
+/* ここからワークス詳細ページ */
+
+.works_fv {
+    margin: 0 auto;
+}
+
+@media screen and (max-width:767px) {
+
+    .works_wrap {
+        display: block;
+    }
+
+    .works_cont {
+        width: 100%;
+    }
+
+}

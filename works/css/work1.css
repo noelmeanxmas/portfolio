@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.nav {
+    position: static;
+}
+
+/* ここからワークス詳細ページ */
+
+.works_fv {
+    margin: 0 auto;
+}
+
+.detail h2 {
+    text-align: center;
+}
+
+.detail_desc {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.detail_item {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.midashi {
+    width: 50%;
+}
+
+.midashi_cont {
+    width: 50%;
+}
+
+
+.footer {
+    background-color: #212121;
+    padding: 10px 10px;
+    color: #fffdf8;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+
+    .works_wrap {
+        display: block;
+    }
+
+    .works_cont {
+        width: 100%;
+    }
+
+}

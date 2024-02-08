@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* cssリセット */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #212121;
+    font-family: "futura-pt", 'Century Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+    font-feature-settings: "palt";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* CSSリセットここまで */
+
+/* ヘッダー */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background: #4c4b49;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.nav_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.nav-top {
+    background: transparent;
+    color: #000;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 20px;
+    color: #fff;
+}
+
+.fv {
+    min-height: 100vh;
+}
+
+.fv img {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+/* ヘッダーここまで */
+
+
+/* メイン */
+
+.main {
+    background-color: #fffdf8;
+    /* position: relative; こっちかと思ったけど違った */
+}
+
+.main h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 80px 0px 50px 0px;
+}
+
+.main p {
+    font-size: 16px;
+}
+
+
+/* ここまでメイン */
+
+
+/* スライダー調整 */
+
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #fff;
+    font-size: 14px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.thanks {
+    background-image: url(../images/contact_back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 50px 50px 50px;
+}
+
+.thanks_inner {
+    max-width: 950px;
+    margin: auto;
+    padding: 100px 100px;
+    background: #fff;
+}
+
+.thanks_cont {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.small {
+    font-size: 16px;
+    text-align: center;
+}
+
+.big {
+    font-size: 32px;
+    text-align: center;
+}
+
+
+
+.footer {
+    background-color: #212121;
+    padding: 10px 10px;
+    color: #fffdf8;
+    text-align: center;
+}

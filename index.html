@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップページ</title>
+    <meta name="description" content="hozmiのポートフォリオトップページです">
+    <link rel="stylesheet" href="https://use.typekit.net/cjl1nry.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body class="top">
+    <!-- pcメニュー-->
+    <nav class="nav nav-top">
+
+        <div class="nav_inner">
+            <div class="logo">LOGO</div>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!-- スマホ用メニューでボタンを表示するためのもの -->
+    <div class="sp_btn"><span></span></div>
+
+    <!-- spメニュー-->
+    <nav class="sp_nav">
+
+        <div class="logo">LOGO</div>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="fv">
+        <img src="https://wannafford.sakura.ne.jp/images/fv.jpg">
+        <p>想いをカタチに変える</p>
+    </div>
+
+    <!-- ここからがメイン -->
+
+    <div class="main">
+
+        <section id="about" class="about">
+            <h2>ABOUT</h2>
+            <div class="about_cont">
+                <div class="about_image">
+                    <img src="images/portfolio_testimg.jpg" alt="あとで置き変えます">
+                </div>
+                <p>わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。
+                    わたしについて、文章が入ります。わたしについて、文章が入ります。わたしについて、文章が入ります。
+                </p>
+            </div>
+        </section>
+
+        <section id="skill" class="skill">
+            <!-- cssで背景画像指定したからここはいらない<img src="images/skill_back.jpg" alt="スキルの背景"> -->
+            <h2>SKILL</h2>
+            <div class="skill_cont">
+                <div class="tate">
+                    <h3>design</h3>
+                    <img src="images/design.jpg" alt="デザイン">
+                    <p>デザインについての文章が入ります。デザインについての文章が入ります。デザインについての文章が入ります。
+                        デザインについての文章が入ります。
+                    </p>
+                </div>
+                <div class="tate">
+                    <h3>cording</h3>
+                    <img src="images/cording.jpg" alt="コーディング">
+                    <p>コーディングについての文章が入ります。コーディングについての文章が入ります。コーディングについての文章が入ります。
+                        コーディングについての文章が入ります。コーディングについての文章が入ります。
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>GALLERY</h2>
+
+            <div class="slider">
+                <div class="slider_item"><img src="images/gallery_testimg.jpg" alt="作品"></div>
+                <div class="slider_item"><img src="images/gallery_testimg.jpg" alt="作品"></div>
+            </div>
+
+            <div class="gal_button">
+                <a href="./works/index.html" class="btn btn--red btn--radius btn--cubic">MORE<i
+                        class="fas fa-angle-right fa-position-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <!-- <img src="images/contact_back.jpg" alt="コンタクトの背景"> -->
+            <div class="contact_inner">
+                <h2>CONTACT</h2>
+                <form
+                    action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSc7WLFRCa0AsGgFk6NMvGnADEZKSO5dd8kO6-DlrlViJC4GGA/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+                    <div class="contact_block">
+                        <div class="contact_item">
+                            <label for="your-name">お名前</label>
+                            <input id="your-name" type="text" name="entry.1765854455" placeholder="川島 太郎">
+                        </div>
+
+                        <div class="contact_item">
+                            <label for="email">メールアドレス</label>
+                            <input id="email" type="text" name="entry.371094645" placeholder="example@mail.co.jp">
+                        </div>
+
+                        <div class="contact_item">
+                            <label for="msg">お問い合わせ内容</label>
+                            <textarea id="msg" name="entry.1759969564" placeholder="お気軽にお問い合わせください。"></textarea>
+                        </div>
+
+                        <div class="contact_item">
+                            <button type="submit" name="button" class="submit">送信する</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ここまでがメイン -->
+
+    <!-- ここからはフッター -->
+
+    <footer class="footer">
+        <!-- <div class="logo">LOGO</div>
+        <ul class="footer_nav">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul> -->
+        <p class="footer">©hozmi design</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        var submitted = false;
+
+        $(function () {
+            $('.slider').slick({
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true,
+                            variableWidth: false,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <!-- ハンバーガーメニュー用のjQueryここから -->
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                // ここにクリックした時の挙動を記述
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
+
+    <!-- ハンバーガーメニュー用のjQueryここまで -->
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted)  {window.location='./thanks/index.html';}">
+    </iframe>
+</body>
+
+</html>

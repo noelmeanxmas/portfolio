@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+
+.top .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* fv */
+
+.fv p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fvここまで */
+
+
+/* ここからABOUT */
+
+.about_cont {
+    position: static;
+    display: flex;
+    margin: 0px auto 80px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-weight: normal;
+}
+
+.about_cont p {
+    width: 50%;
+    padding: 50px 0px 50px 20px;
+}
+
+/* ここまでABOUT */
+
+/* ここからSKILL */
+
+.skill {
+    /* position: relative; */
+    background-image: url(../images/skill_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.skill h2 {
+    font-weight: normal;
+}
+
+.skill h3 {
+    font-weight: normal;
+}
+
+.skill_cont {
+    display: flex;
+    justify-content: center;
+    margin: 0px 200px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.tate {
+    display: block;
+    width: 50%;
+    text-align: center;
+    background-color: #fffdf8;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.tate h3 {
+    margin-bottom: 20px;
+}
+
+.tate img {
+    margin-bottom: 20px;
+}
+
+.tate p {
+    margin: 0px 40px 40px 40px;
+}
+
+.tate:last-child {
+    margin-left: 20px;
+}
+
+.skiil img {
+    width: 100%;
+    height: auto;
+}
+
+/* ここまでSKILL */
+
+/* ここからギャラリー */
+
+.gallery h2 {
+    font-weight: normal;
+}
+
+.gal_button {
+    text-align: right;
+    margin: 0px 200px 80px;
+}
+
+a.btn--red.btn--cubic {
+    border: 2px solid;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+a.btn--radius {
+    border-radius: 100vh;
+}
+
+.fa-position-right {
+    position: absolute;
+    top: calc(50% - .5em);
+    right: 1rem;
+}
+
+/* ここまでギャラリー */
+
+/* ここからコンタクト */
+
+.contact {
+    background-image: url(../images/contact_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    display: block;
+}
+
+.contact_inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fff;
+}
+
+.contact_block {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.contact_item {
+    display: flex;
+    /* display: block;
+    text-align: center; */
+    margin-bottom: 20px;
+}
+
+.contact_item label {
+    min-width: 150px;
+    padding: 13px 0;
+    font-size: 16px;
+}
+
+.contact_item input,
+.contact_item textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background: #e8e8e8;
+}
+
+.contact_item textarea {
+    min-height: 150px;
+}
+
+.contact_item .submit {
+    padding: 10px 0;
+    width: 220px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 99rem;
+    font-size: 16px;
+    background: transparent;
+}
+
+.contact h2 {
+    font-weight: normal;
+    padding: 20px 0 60px;
+}
+
+/* フッター */
+
+.footer {
+    background-color: #212121;
+    padding: 10px 10px;
+    color: #fffdf8;
+    text-align: center;
+}
+
+/* pc版でハンバーガーを表示しないためのもの */
+.sp_btn,
+.sp_nav {
+    display: none;
+}
+
+/* ここからスマホ用 */
+
+@media screen and (max-width:1100px) {
+
+    .nav {
+        display: none;
+    }
+
+    .nav-top {
+        display: none;
+    }
+
+    /* ハンバーガー */
+
+    .sp_btn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+        color: #212121;
+    }
+
+    .sp_btn span {
+        position: relative;
+        top: 10px;
+        display: block;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        color: #212121;
+        background-color: #212121;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #212121;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .about_cont {
+        display: block;
+    }
+
+    .about_cont img {
+        width: 100%;
+    }
+
+    .about_cont p {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 50px 20px;
+    }
+
+    .skill {
+        padding: 0 20px;
+        background-position: center;
+    }
+
+    .skill_cont {
+        display: block;
+        padding-bottom: 60px;
+    }
+
+    .tate {
+        width: 100%;
+    }
+
+    .tate:last-child {
+        margin-left: 0;
+    }
+
+    .contact_item {
+        display: block;
+    }
+
+    .contact_item label {
+        display: block;
+    }
+
+    .contact_item input {
+        box-sizing: border-box;
+    }
+
+}
