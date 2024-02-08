@@ -40,6 +40,10 @@
     padding: 50px 0px 50px 20px;
 }
 
+.about_image {
+    width: 45%;
+}
+
 /* ここまでABOUT */
 
 /* ここからSKILL */
@@ -305,7 +309,7 @@ a.btn--radius {
             display: block;
         }
 
-        .about_cont img {
+        .about_image {
             width: 100%;
         }
 
